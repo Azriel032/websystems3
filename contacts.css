@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #E0F2FE, #B3E5FC);
+    min-height: 100vh;
+}
+
+.header-card {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    margin: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.header-card h1 {
+    color: #1E3A8A;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.header-card span {
+    font-size: 0.6em;
+    font-weight: 400;
+    color: #6B7280;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.content-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 3rem;
+    margin: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #1E3A8A;
+    margin: 0 0 2.5rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 i {
+    color: #A3BFFA;
+    margin-right: 15px;
+}
+
+.contact-grid {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    padding: 2rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.contact-item i {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.email-box { background: #A3BFFA; color: #1E3A8A; }
+.phone-box { background: #7AA2F7; color: #1E3A8A; }
+.ms-account-box { background: #5B8BF5; color: white; }
+
+.footer-area {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 1rem 2.5rem;
+    background: #A3BFFA;
+    color: #1E3A8A;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn-back:hover {
+    background: #7AA2F7;
+    transform: scale(1.05);
+}

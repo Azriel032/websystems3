@@ -1,0 +1,149 @@
+/* Replace the existing body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #E0F2FE, #B3E5FC);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* NEW: Dual columns container */
+.content-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 1.5rem;
+}
+
+.dual-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Column box styles */
+.column-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #1E3A8A;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/* Lists styling */
+.hobbies-list, .website-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies-list li, .website-list li {
+    padding: 0.8rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+}
+
+.hobbies-list li:hover, .website-list li:hover {
+    transform: translateX(8px);
+    color: #1E3A8A;
+}
+
+/* Icon styling */
+.hobbies-list li i, .website-list li i {
+    color: #3b82f6;
+    font-size: 1.2rem;
+    width: 24px;
+}
+
+/* Count badges for websites */
+.count-badge {
+    background: #1E3A8A;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dual-columns {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .header-card {
+        margin-bottom: 1rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Keep existing header and footer styles */
+.header-card {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 25px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.header-card h1 {
+    color: #1E3A8A;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.header-card span {
+    font-size: 0.6em;
+    font-weight: 400;
+    color: #6B7280;
+    font-style: normal;
+    display: block;
+}
+
+.footer-area {
+    text-align: center;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.8rem 2rem;
+    background: #1E3A8A;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #3b82f6;
+    transform: scale(1.05);
+}
+
+/* Remove unused contact styles */
+.contact-grid, .contact-item, .email-box, .phone-box, .ms-account-box {
+    display: none;
+}
