@@ -1,4 +1,4 @@
-/* Replace the existing body styles */
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #E0F2FE, #B3E5FC);
@@ -10,7 +10,7 @@ body {
     padding: 20px;
 }
 
-/* NEW: Dual columns container */
+
 .content-wrapper {
     width: 100%;
     max-width: 900px;
@@ -24,7 +24,7 @@ body {
     width: 100%;
 }
 
-/* Column box styles */
+
 .column-box {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
@@ -39,7 +39,7 @@ h2 {
     text-align: center;
 }
 
-/* Lists styling */
+
 .hobbies-list, .website-list {
     list-style: none;
     padding: 0;
@@ -59,14 +59,14 @@ h2 {
     color: #1E3A8A;
 }
 
-/* Icon styling */
+
 .hobbies-list li i, .website-list li i {
     color: #3b82f6;
     font-size: 1.2rem;
     width: 24px;
 }
 
-/* Count badges for websites */
+
 .count-badge {
     background: #1E3A8A;
     color: white;
@@ -81,7 +81,7 @@ h2 {
     flex-shrink: 0;
 }
 
-/* Responsive design */
+
 @media (max-width: 768px) {
     .dual-columns {
         grid-template-columns: 1fr;
@@ -94,7 +94,7 @@ h2 {
     }
 }
 
-/* Keep existing header and footer styles */
+
 .header-card {
     text-align: center;
     padding: 2rem;
@@ -143,7 +143,7 @@ h2 {
     transform: scale(1.05);
 }
 
-/* Remove unused contact styles */
+
 .contact-grid, .contact-item, .email-box, .phone-box, .ms-account-box {
     display: none;
 }
